@@ -1,0 +1,7 @@
+class V1::CourseSerializer < ActiveModel::Serializer
+  attributes :id,
+  :title,
+  :professor,
+  :time,
+  :dates
+end
