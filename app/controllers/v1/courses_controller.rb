@@ -13,6 +13,7 @@ class V1::CoursesController < ApplicationController
 			render json: course, status: :created
 		else 
 			render json: {errors: course.errors}, status: :unprocessable_entity
+		end
 	end 
 
 	def show
@@ -43,5 +44,6 @@ class V1::CoursesController < ApplicationController
 			:dates,
 			:time
 		)
-	end 
-end
+	end
+
+end 
