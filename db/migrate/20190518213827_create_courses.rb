@@ -7,7 +7,8 @@ class CreateCourses < ActiveRecord::Migration[5.2]
       t.string :professor
       t.string :code
       t.string :dates
-      t.string :time
+      t.string :start_time
+      t.string :end_time
 
       t.timestamps
     end
